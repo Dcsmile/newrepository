@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>01</title>
+		<!-- <script src="https://unpkg.com/vue@next"></script> -->
+		<script src="js/v2.6.10/vue.js" type="text/javascript" charset="utf-8"></script>
+		<style type = "text/css">
+			#pane{
+				width: 200px;
+				height: 200px;
+				background-color: aquamarine;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+		  {{ message }}
+		</div>
+		<hr/>
+		<div id="app1">
+			<h1>用户名：{{ userName }}</h1>
+		  <h3 v-if="seen">用户类型：VIP</h3> 
+		  <h3 v-else>用户类型：普通</h3> 
+	
+		<hr />
+		
+			<h1>允许登陆时间</h1>
+		  <h3 v-if = "age > 18">允许时间12H</h3> 
+		  <h3 v-else-if = "age > 14">允许时间6H</h3> 
+		   <h3 v-else>允许时间2H</h3> 
+		</div>
+		<hr />
+		
+		<div id = "app2">
+			<div v-show ="isShow" id = "pane">
+				HelloVue
+			</div>
+			<button @click = "showpage">切换显示内容</button>
+		</div>
+		
+		
+	<script type="text/javascript">
+		//console.log(Vue)
+		let app = new Vue({
+		  el: '#app',
+		  data: {
+		    message: 'Hello Vue!'
+		  }
+		})
+		console.log(app)
+		
+	</script>
+	
+	<script type="text/javascript">
+		
+		let app1 = new Vue({
+		  el: '#app1',
+		  data: {
+		    userName: 'luoandcai',
+			seen: false,
+			age: 24
+		  }
+		})	
+	</script>
+	
+	<script type="text/javascript">
+		
+		let app2 = new Vue({
+		  el: '#app2',
+		  data: {
+		    isShow: true
+		  },
+		  methods:{
+			  showpage:function(e){
+				  console.log(e)
+				  app2.isShow = !app2.isShow;
+			  }
+			  
+		  }
+		})	
+	</script>
+	
+	</body>
+</html>
