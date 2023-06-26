@@ -1,0 +1,52 @@
+body {
+	font-size: 100%;
+	font-family: 'Times New Roman', Times, serif;
+}
+body* {
+	font-size: 1em;
+}
+a {
+	font-weight: bold;
+	text-decoration:  none;
+}
+header nav {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header nav a {
+		text-decoration:  none;
+			font-weight: bold;
+			font-size: 1.5vw;
+}
+article{
+	line-height: 2em;
+}
+article p {
+margin:  1em 0;
+}
+ h1{
+	font-family: 'Times New Roman', Times, serif;
+
+	 /*font-size:clamp(24px,20vw,6px) ;*/
+	  font-size: clamp(14px,5vw,28px);
+	 
+ }
+
+#imagegallery li {
+	list-style-type: none;
+}
+
+table{
+	font-size: 2vw;
+}
+
+textarea {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+dt{
+	font-size: 2vw;
+}
+dd{
+	font-size: 2vw;
+}

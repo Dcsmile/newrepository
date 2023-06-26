@@ -1,0 +1,129 @@
+body#home{
+	background-color: #334;
+}
+body#about{
+	background-color: #340;
+}
+body#photo{
+	background-color: #430;
+}
+body#live{
+	background-color: #540;
+}
+body#contact{
+	background-color: #773;
+}
+
+a:link {
+	color: #445;
+
+}
+a:visited{
+	color: #345;
+	
+}
+a:hover{
+	color:#eb6;
+
+}
+a:active{
+	color: #778;
+
+}
+
+
+header{
+	color: #ec8;
+	background-color: #000;
+	border-color: #667;
+}
+header nav{
+	color: #223;
+	background-color: #667;
+	border-color: #667;
+}
+header nav ul {
+	border-color: #99a;
+}
+
+a.cname
+	{
+		color: #445;
+	    background-color: #eb6;
+	}
+
+/*.cname a:visited
+	{
+		color: #445;
+	    background-color: #eb6;
+	}
+
+.cname a:hover
+	{
+		color: #445;
+	    background-color: #eb6;
+	}
+
+.cname a:active {
+	color: #445;
+    background-color: #eb6;
+}
+*/
+
+
+ header nav a:link, header nav a:visited,  {
+color: #667;
+background-color: #667;
+	border-color: #99a;
+}
+header nav a:hover  {
+color: #667;
+	background-color: #eb6;
+}
+header nav a:active  {
+color: #667;
+	background-color: #ffae00;
+}
+
+#arti{
+	color: #223;
+	background-color: #edc;
+	border-color: #667;
+}
+
+article{
+	color: #223;
+	background-color: #edc;
+}
+
+
+/*article img{
+	border-color: #ba9;
+	outline-color:#dcb ;
+}
+*/
+#imagegallery a {
+	background-color: transparent;
+}
+
+th{
+	color: #edc;
+	background-color: #455;
+}
+
+tr td{
+	color: #223;
+	background-color: #eb6;
+}
+tr.odd td{
+	color: #223;
+	background-color: #ec8;
+}
+tr.hightRows td{
+	color: #223;
+	background-color: #cba;
+}
+.area{
+	background-color: azure;
+	color: black;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta 
+			name="viewport" 
+			content="width=device-width,initial-scale=1.0, minimum-scale=1.0, 
+			maximum-scale=1.0, 
+		  user-scalable=no"/>
+		<meta charset="utf-8" />
+		<link rel="stylesheet"  media="screen" href="css/basic.css"  />
+		 <!--<script src="./js/modernizr-custom.js"></script> -->
+		<title>submit</title>
+  
+	</head>
+<body>
+	<header>
+	<img  src="./img/img1.jpg"  alt="logo"/>
+		<nav id="toppx">
+		<ul>
+    	<li><a href="index.html " >Home</a></li>
+		<li><a href="about.html" >Abouts</a></li>
+		<li><a href="photo.html" >Photo</a></li>
+		<li><a href="fliv.html" >Live</a></li>
+		<li><a href="contact.html" >Contact</a></li>
+		</ul>
+        </nav>
+	</header>
+	
+<!--<div id= "arti">-->
+<article class="ar"><h1> Thank! </h1><p>Thanks for contacting us. We'll get back to you as soon as we can.</p></article>
+	<!--<div id="slideshow">
+	<img src="./img/turn1.jpg" alt="webdesign" id="preview"  width = "750px" height = "150px" />
+	</div>-->
+
+	<!--</div>-->
+
+<script type="text/javascript" src="./js/global.js"></script>
+<script type="text/javascript" src="./js/insertAfter.js"></script>
+<script type="text/javascript" src="./js/hlightPage.js"></script>
+<script type="text/javascript">
+	function sub (){
+		var articles = document.getElementsByTagName("article");
+		for (var i =0; i<articles.length; i++){
+			console.log(articles.length);
+			var hp = articles[0].childNodes;
+			//var hp = document.querySelector('.ar h1');
+		     console.log(hp);
+			 var thank = hp[0];
+			var newthank = document.createTextNode('thank');
+			//var newart = document.getElementsByTagName("article") ;
+			hp[1].appendChild(newthank);
+		
+		}
+	
+	}
+		addLoadEvent(sub);
+</script>
+
+
+
+
+
+
+
+</body>
+	
+</html>

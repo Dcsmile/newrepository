@@ -1,0 +1,161 @@
+section, header, article, nav {
+	display: block;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+	}
+body {
+	margin: 1em auto;
+	/*background-image: url(../img/bk.jpg);*/
+	background-attachment: fixed;
+	background-position: top left;
+	background-repeat: repeat;
+	max-width: 80%;
+}
+
+header{
+	//background-image: url(../img/img1.jpg);
+    //background-position: top right;
+	//background-repeat: no-repeat;
+	border-width: .1em ;
+	border-style: .solid ;
+	border-bottom-width: 0 ;
+
+	}
+header nav {
+		background-image: url(../img/7.jpg);
+		background-position: bottom left;
+		background-repeat: repeat-x;
+		border-width: .1em ;
+		border-style: .solid ;
+		border-bottom-width: 0 ;
+		border-top-width: 0 ;
+       padding: 0 10% ;
+		}
+		
+		header nav ul {
+				width: 100%;
+				overflow: hidden;
+				border-left-width: .1em ;
+				border-left-style: solid;
+		
+				}
+header nav li {
+display: inline;
+
+}
+header nav li a {
+display: block;
+float: left;
+padding: .1em 1em;
+border-right: .1em solid;
+width: 20%;
+
+text-align: center;
+}
+
+#arti {
+	border-width: .1em ;
+	border-style: .solid ;
+	border-top-width: 0 ;
+	line-height: 1.8em;
+	padding: 10% 10%;
+	width: 100%;
+}
+table{
+border-spacing: 4px;
+width: 100%;
+text-align: center;
+}
+thead tr th{
+	width: 33.3%;
+}
+
+tbody tr td{
+	width: 33.3%;
+}
+
+article {
+	border-width: .1em ;
+	border-style: .solid ;
+	border-top-width: 0 ;
+	line-height: 1.8em;
+	padding: 10% 10%;
+	width: 100%;
+}
+/*article img {
+	border-width: .1em ;
+	border-style: .solid ;
+	outline-width: .1em ;
+	outline-style: .solid ;
+
+}*/
+
+header img { 
+	/*width:auto; height:auto; max-width:100%; max-height:100%;*/
+	width:100%;
+	}
+	
+
+
+#slideshow{
+width: 150px;
+	height: 150px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#preview{
+	position: absolute;
+border-width: 0;
+outline-width: 0;
+}
+#frame{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 99;
+}
+#imagegallery li{
+	display: inline;
+	padding: 4px;
+}
+#holder{
+	width: 100%;
+}
+td{
+	padding: 2% 4%;
+}
+dl{
+	display: inline;
+	width: 100%;
+	line-height: 1.2em;
+	
+
+}
+
+dt{
+padding: 1%;	
+float: left;
+
+}
+dd{
+float: left;
+padding: 1%;
+}
+
+label{
+	display: block;
+}
+fieldset{
+	border: 0;
+}
+textarea{
+	border: 0;
+}
+.area{
+	width: 90%;
+	height: 30vh;
+}
